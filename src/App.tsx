@@ -7,7 +7,7 @@ const adminKey = "SECRET123";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/review_app/">
       <Routes>
         <Route path="/" element={<Home googleReviewURL={googleReviewURL} />} />
         <Route path="/admin" element={<Admin adminKey={adminKey} />} />
